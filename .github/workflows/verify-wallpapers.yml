@@ -1,13 +1,14 @@
 name: Verify Wallpaper Cask Checksums
 
-on:
-  pull_request:
-    paths:
-      - "Casks/*wallpapers*.rb"
-      - "scripts/verify-wallpapers.py"
-      - ".github/workflows/verify-wallpapers.yml"
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     paths:
+#       - "Casks/*wallpapers*.rb"
+#       - "scripts/verify-wallpapers.py"
+#       - ".github/workflows/verify-wallpapers.yml"
+#   workflow_dispatch:
+# 
 permissions:
   contents: read
 

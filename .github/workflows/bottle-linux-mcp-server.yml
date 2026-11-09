@@ -1,13 +1,14 @@
 name: Build linux-mcp-server Bottles
 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'Formula/linux-mcp-server.rb'
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - 'Formula/linux-mcp-server.rb'
+#   workflow_dispatch:
+# 
 jobs:
   get-version:
     runs-on: ubuntu-26.04

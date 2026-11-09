@@ -1,11 +1,12 @@
 name: brew test-bot
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+# 
 jobs:
   syntax:
     runs-on: ubuntu-26.04

@@ -1,10 +1,11 @@
 name: Bump Wallpaper Casks
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "30 3,15 * * *" # 30 mins after main bump
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     - cron: "30 3,15 * * *" # 30 mins after main bump
+# 
 jobs:
   bump-wallpapers:
     runs-on: ubuntu-latest
